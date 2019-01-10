@@ -69,6 +69,8 @@
     <Compile Include="Assets\Scripts\Quit.cs" />
     <Compile Include="Assets\Scripts\SpiderAI.cs" />
     <Compile Include="Assets\Scripts\Talking.cs" />
+    <None Include="Assets\License.txt" />
+    <None Include="Assets\Orb\Read Me.txt" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/s158864/Documents/GitHub/DGP2/The Shutdown/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
