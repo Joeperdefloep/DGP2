@@ -70,16 +70,16 @@
     <Compile Include="Assets\Scripts\SpiderAI.cs" />
     <Compile Include="Assets\Scripts\Talking.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/s158864/Documents/Uni/Year 4/DZC20/The Shutdown/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/s158864/Documents/GitHub/DGP2/The Shutdown/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/s158864/Documents/Uni/Year 4/DZC20/The Shutdown/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/s158864/Documents/GitHub/DGP2/The Shutdown/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/s158864/Documents/Uni/Year 4/DZC20/The Shutdown/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/s158864/Documents/GitHub/DGP2/The Shutdown/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/s158864/Documents/Uni/Year 4/DZC20/The Shutdown/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/s158864/Documents/GitHub/DGP2/The Shutdown/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
