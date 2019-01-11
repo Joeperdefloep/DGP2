@@ -5,6 +5,7 @@ public class PlayerMovement : MonoBehaviour {
     public float playerSpeed;
     public GameObject player;
     public Inventory inventory;
+    public int health;
 
     public float posX;
     public float posY;
@@ -119,5 +120,11 @@ public class PlayerMovement : MonoBehaviour {
 
     }
 
-
+    public void TakeDamage(int damage)
+    {
+        health -= damage;
+        if (health <= 0) {
+            Debug.Log("Dead");
+        }
+    }
 }

@@ -46,6 +46,5 @@ public class SpiderAI : MonoBehaviour {
         Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
         //Apply the rotation to our transform
         transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 5f);
-
 	}
 }
