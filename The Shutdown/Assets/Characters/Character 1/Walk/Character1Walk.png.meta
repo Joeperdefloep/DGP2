@@ -663,13 +663,13 @@ TextureImporter:
       name: Character1Walk_27
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 41
-        height: 50
+        x: 21
+        y: 2
+        width: 20
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 21, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -684,9 +684,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 84
-        y: 0
+        y: 2
         width: 25
-        height: 49
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -704,9 +704,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 149
-        y: 0
+        y: 3
         width: 22
-        height: 50
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -724,9 +724,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 211
-        y: 0
+        y: 3
         width: 22
-        height: 50
+        height: 47
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -744,9 +744,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 274
-        y: 0
+        y: 2
         width: 25
-        height: 50
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 1, w: 0}
@@ -764,7 +764,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 336
-        y: 0
+        y: 2
         width: 28
         height: 49
       alignment: 0
@@ -784,9 +784,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 402
-        y: 0
+        y: 2
         width: 23
-        height: 50
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -804,12 +804,12 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 467
-        y: 0
+        y: 2
         width: 22
-        height: 50
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 20, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -824,9 +824,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 532
-        y: 0
+        y: 2
         width: 21
-        height: 50
+        height: 48
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}

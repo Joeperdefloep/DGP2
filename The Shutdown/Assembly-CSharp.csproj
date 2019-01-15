@@ -75,7 +75,9 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Quit.cs" />
     <Compile Include="Assets\Scripts\RangedAttackAI.cs" />
-    <Compile Include="Assets\Scripts\SpiderAI.cs" />
+    <Compile Include="Assets\Scripts\SpiderAIHor.cs" />
+    <Compile Include="Assets\Scripts\SpiderAIVer.cs" />
+    <Compile Include="Assets\Scripts\Spinner.cs" />
     <Compile Include="Assets\Scripts\Talking.cs" />
     <None Include="Assets\HealthHeartSystem\readme.txt" />
     <None Include="Assets\License.txt" />
