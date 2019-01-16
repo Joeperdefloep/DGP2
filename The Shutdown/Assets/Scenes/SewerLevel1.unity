@@ -14369,6 +14369,7 @@ GameObject:
   - component: {fileID: 338759989}
   - component: {fileID: 338759991}
   - component: {fileID: 338759990}
+  - component: {fileID: 338759992}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -14452,7 +14453,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 338759985}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 11.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -14529,7 +14530,23 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &338759992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338759985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4161c74d6322b8499fbe696f180fdde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentInterObj: {fileID: 0}
+  currentInterObjScript: {fileID: 0}
+  inventory: {fileID: 0}
+  movement: {fileID: 338759986}
 --- !u!1 &608676367
 GameObject:
   m_ObjectHideFlags: 0
@@ -14607,7 +14624,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 608676367}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 11.69, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -20186,6 +20203,85 @@ Transform:
   m_Father: {fileID: 1443182631}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1374725131
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1374725133}
+  - component: {fileID: 1374725132}
+  - component: {fileID: 1374725134}
+  m_Layer: 0
+  m_Name: Door1
+  m_TagString: interObject
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &1374725132
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374725131}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
+--- !u!4 &1374725133
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374725131}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.02, y: 15.04, z: 0.60105914}
+  m_LocalScale: {x: 3.966217, y: 4.043221, z: 1.0103}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1374725134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1374725131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24069a278d5e4cb41ab1c7df6a08ea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speaks: {fileID: 0}
+  inventory: 0
+  openable: 1
+  locked: 0
+  canTalk: 0
+  itemType: 
+  itemNeeded: {fileID: 0}
+  coinsNeeded: 0
+  message: 
 --- !u!1 &1410176669
 GameObject:
   m_ObjectHideFlags: 0
@@ -20197,6 +20293,7 @@ GameObject:
   - component: {fileID: 1410176670}
   - component: {fileID: 1410176672}
   - component: {fileID: 1410176671}
+  - component: {fileID: 1410176673}
   m_Layer: 10
   m_Name: Ladder
   m_TagString: Untagged
@@ -20333,6 +20430,20 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1410176673
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410176669}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
 --- !u!1 &1442519909
 GameObject:
   m_ObjectHideFlags: 0
@@ -20345,6 +20456,7 @@ GameObject:
   - component: {fileID: 1442519912}
   - component: {fileID: 1442519911}
   - component: {fileID: 1442519910}
+  - component: {fileID: 1442519914}
   m_Layer: 0
   m_Name: Partolling Orb Ver
   m_TagString: Untagged
@@ -20449,6 +20561,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+--- !u!58 &1442519914
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442519909}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.55
 --- !u!1 &1443182630
 GameObject:
   m_ObjectHideFlags: 0
@@ -20494,6 +20622,10 @@ GameObject:
   - component: {fileID: 1507792244}
   - component: {fileID: 1507792246}
   - component: {fileID: 1507792245}
+  - component: {fileID: 1507792248}
+  - component: {fileID: 1507792247}
+  - component: {fileID: 1507792249}
+  - component: {fileID: 1507792250}
   m_Layer: 11
   m_Name: Doors
   m_TagString: Untagged
@@ -20688,6 +20820,241 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1507792247
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507792243}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 1
+  m_Offset: {x: 0, y: 0}
+--- !u!50 &1507792248
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507792243}
+  m_BodyType: 2
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!66 &1507792249
+CompositeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507792243}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_GeometryType: 0
+  m_GenerationType: 0
+  m_EdgeRadius: 0
+  m_ColliderPaths:
+  - m_Collider: {fileID: 1507792247}
+    m_ColliderPaths:
+    - - X: 25000000
+        Y: 150000000
+      - X: 30000000
+        Y: 150000000
+      - X: 30000000
+        Y: 153750000
+      - X: 20000000
+        Y: 153750000
+      - X: 20000000
+        Y: 152031248
+      - X: 17500000
+        Y: 152031248
+      - X: 17500000
+        Y: 154531248
+      - X: 16250000
+        Y: 157031248
+      - X: 11875000
+        Y: 161406256
+      - X: -1875000
+        Y: 161406256
+      - X: -6250000
+        Y: 157031248
+      - X: -7500000
+        Y: 154531248
+      - X: -7500000
+        Y: 152031248
+      - X: -15000000
+        Y: 152031248
+      - X: -15000000
+        Y: 139531248
+      - X: 25000000
+        Y: 139531248
+    - - X: -20000000
+        Y: 153750000
+      - X: -30000000
+        Y: 153750000
+      - X: -30000000
+        Y: 150000000
+      - X: -20000000
+        Y: 150000000
+    - - X: 355000000
+        Y: 12031250
+      - X: 347500000
+        Y: 12031250
+      - X: 347500000
+        Y: 14531250
+      - X: 346249984
+        Y: 17031250
+      - X: 341875008
+        Y: 21406250
+      - X: 328124992
+        Y: 21406250
+      - X: 323750016
+        Y: 17031250
+      - X: 322500000
+        Y: 14531250
+      - X: 322500000
+        Y: 12031250
+      - X: 315000000
+        Y: 12031250
+      - X: 315000000
+        Y: -468750
+      - X: 355000000
+        Y: -468750
+    - - X: 395000000
+        Y: -290000000
+      - X: 400000000
+        Y: -290000000
+      - X: 400000000
+        Y: -286249984
+      - X: 390000000
+        Y: -286249984
+      - X: 390000000
+        Y: -287968736
+      - X: 387500000
+        Y: -287968736
+      - X: 387500000
+        Y: -285468736
+      - X: 386249984
+        Y: -282968736
+      - X: 381875008
+        Y: -278593760
+      - X: 368124992
+        Y: -278593760
+      - X: 363750016
+        Y: -282968736
+      - X: 362500000
+        Y: -285468736
+      - X: 362500000
+        Y: -287968736
+      - X: 360000000
+        Y: -287968736
+      - X: 360000000
+        Y: -286249984
+      - X: 350000000
+        Y: -286249984
+      - X: 350000000
+        Y: -290000000
+      - X: 355000000
+        Y: -290000000
+      - X: 355000000
+        Y: -300468736
+      - X: 395000000
+        Y: -300468736
+  m_CompositePaths:
+    m_Paths:
+    - - {x: 2.5, y: 15}
+      - {x: 3, y: 15}
+      - {x: 3, y: 15.375}
+      - {x: 2, y: 15.375}
+      - {x: 2, y: 15.203125}
+      - {x: 1.75, y: 15.203125}
+      - {x: 1.75, y: 15.453125}
+      - {x: 1.625, y: 15.703125}
+      - {x: 1.1875, y: 16.140625}
+      - {x: -0.1875, y: 16.140625}
+      - {x: -0.625, y: 15.703125}
+      - {x: -0.75, y: 15.453125}
+      - {x: -0.75, y: 15.203125}
+      - {x: -1.5, y: 15.203125}
+      - {x: -1.5, y: 13.953125}
+      - {x: 2.5, y: 13.953125}
+    - - {x: -2, y: 15.375}
+      - {x: -3, y: 15.375}
+      - {x: -3, y: 15}
+      - {x: -2, y: 15}
+    - - {x: 35.5, y: 1.203125}
+      - {x: 34.75, y: 1.203125}
+      - {x: 34.75, y: 1.453125}
+      - {x: 34.625, y: 1.703125}
+      - {x: 34.1875, y: 2.140625}
+      - {x: 32.8125, y: 2.140625}
+      - {x: 32.375004, y: 1.703125}
+      - {x: 32.25, y: 1.453125}
+      - {x: 32.25, y: 1.203125}
+      - {x: 31.5, y: 1.203125}
+      - {x: 31.5, y: -0.046875}
+      - {x: 35.5, y: -0.046875}
+    - - {x: 39.5, y: -29}
+      - {x: 40, y: -29}
+      - {x: 40, y: -28.624998}
+      - {x: 39, y: -28.624998}
+      - {x: 39, y: -28.796873}
+      - {x: 38.75, y: -28.796873}
+      - {x: 38.75, y: -28.546873}
+      - {x: 38.625, y: -28.296873}
+      - {x: 38.1875, y: -27.859377}
+      - {x: 36.8125, y: -27.859377}
+      - {x: 36.375004, y: -28.296873}
+      - {x: 36.25, y: -28.546873}
+      - {x: 36.25, y: -28.796873}
+      - {x: 36, y: -28.796873}
+      - {x: 36, y: -28.624998}
+      - {x: 35, y: -28.624998}
+      - {x: 35, y: -29}
+      - {x: 35.5, y: -29}
+      - {x: 35.5, y: -30.046873}
+      - {x: 39.5, y: -30.046873}
+  m_VertexDistance: 0.0005
+--- !u!114 &1507792250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507792243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24069a278d5e4cb41ab1c7df6a08ea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speaks: {fileID: 0}
+  inventory: 0
+  openable: 1
+  locked: 0
+  canTalk: 0
+  itemType: 
+  itemNeeded: {fileID: 0}
+  coinsNeeded: 0
+  message: 
 --- !u!1 &1614765451
 GameObject:
   m_ObjectHideFlags: 0
@@ -20730,6 +21097,7 @@ GameObject:
   - component: {fileID: 1968428945}
   - component: {fileID: 1968428947}
   - component: {fileID: 1968428944}
+  - component: {fileID: 1968428948}
   m_Layer: 0
   m_Name: Partolling Orb Hor
   m_TagString: Untagged
@@ -20834,6 +21202,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!58 &1968428948
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968428943}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 1.55
 --- !u!1 &2093578964
 GameObject:
   m_ObjectHideFlags: 0
