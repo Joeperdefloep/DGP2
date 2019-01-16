@@ -10,6 +10,9 @@ public class NewBehaviourScript : MonoBehaviour
     private float lastAttackTime;
     public float attackDelay;
 
+    public GameObject projectile;
+    public float bulletForce;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +32,18 @@ public class NewBehaviourScript : MonoBehaviour
             Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
             transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
             
-
+            //Check to see if its time to attack
+            if(Time.time > lastAttackTime + attackDelay){
+                //Raycast to see if we have lien of sight to target
+                RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, attackRange);
+                //Check to see if we hit anything and what it was
+                if (hit.transform == target) {
+                    //Hit the player - fire projectile
+                    GameObject newBullet = Instantiate(projectile, transform.position, transform.rotation);
+                    newBullet.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(0f, bulletForce));
+                    lastAttackTime = Time.time;
+                }
+            }
         }
     }
 }
