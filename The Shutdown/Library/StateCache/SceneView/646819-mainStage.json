@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":36.787864685058597,"y":-28.352684020996095,"z":0.08046875149011612},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":14.88040828704834,"orthographic":true}
 >>>>>>> 8e10de873b55003ab99ad54a342ab07a353b6da0
 =======
@@ -8,3 +9,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-1.48965322971344,"y":15.69455337524414,"z":0.04960845410823822},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":8.417566299438477,"orthographic":true}
 >>>>>>> parent of 0c56990... New Doors and other changes
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.4915223717689514,"y":0.8898850679397583,"z":-2.802734375},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":10.47832202911377,"orthographic":true}
+>>>>>>> parent of 01b65a2... Finished range AI, Mech Sprites cut
