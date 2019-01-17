@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":36.787864685058597,"y":-28.352684020996095,"z":0.08046875149011612},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":14.88040828704834,"orthographic":true}
 =======
 <<<<<<< HEAD
@@ -7,3 +8,6 @@
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":0.4164828658103943,"y":8.403278350830079,"z":0.56640625},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":20.33599853515625,"orthographic":true}
 >>>>>>> 05d7bffe22d01ddfef6a130e9f3328cebb1ef27e
 >>>>>>> 8e10de873b55003ab99ad54a342ab07a353b6da0
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-1.48965322971344,"y":15.69455337524414,"z":0.04960845410823822},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":8.417566299438477,"orthographic":true}
+>>>>>>> parent of 0c56990... New Doors and other changes
