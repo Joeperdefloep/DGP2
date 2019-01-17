@@ -8,8 +8,6 @@ public class ChaseAI : MonoBehaviour
     public Transform target;
     public float chaseRange;
 
-
-
     // Start is called before the first frame update
     void Start()
     {

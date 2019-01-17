@@ -11,7 +11,7 @@ public class InteractionObject : MonoBehaviour {
     public bool inventory;      //If true, this object can be stored in inventory
     public bool openable;       //If true, this object can be opened
     public bool locked;         //If true, this object is locked
-    public bool canTalk;        //If true, this object can talk to the player
+    public bool canTalk;          //If true, this object can talk to the player
     public string itemType;     //This will tell what type of item this object is
 
     public GameObject itemNeeded;      //Object required to interact with this item.
