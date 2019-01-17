@@ -13,7 +13,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Cells:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - m_Tile: {fileID: 11400000, guid: ab261f900ae671c4e8a481b9e7596e58, type: 2}
+=======
+  - m_Tile: {fileID: 0}
+>>>>>>> parent of 8a4c51d... New Code + Door mechanics
 =======
   - m_Tile: {fileID: 0}
 >>>>>>> parent of 8a4c51d... New Code + Door mechanics
