@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":36.787864685058597,"y":-28.352684020996095,"z":0.08046875149011612},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":14.88040828704834,"orthographic":true}
 >>>>>>> 8e10de873b55003ab99ad54a342ab07a353b6da0
 =======
@@ -12,3 +13,6 @@
 =======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-0.4915223717689514,"y":0.8898850679397583,"z":-2.802734375},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":10.47832202911377,"orthographic":true}
 >>>>>>> parent of 01b65a2... Finished range AI, Mech Sprites cut
+=======
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true},"in2DMode":true,"pivot":{"x":-7.172235488891602,"y":-3.3283185958862306,"z":-2.8013176918029787},"rotation":{"x":0.0,"y":0.0,"z":0.0,"w":1.0},"size":22.0,"orthographic":true}
+>>>>>>> parent of 8e10de8... conflict second merge
