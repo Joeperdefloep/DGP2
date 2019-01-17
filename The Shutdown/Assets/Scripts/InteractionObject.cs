@@ -21,8 +21,7 @@ public class InteractionObject : MonoBehaviour {
     
     public void DoInteraction()
     {
-        Debug.Log("Open Sesame!");
-        //gameObject.SetActive(false);
+        gameObject.SetActive(false);
     }
 
     public void Talk()

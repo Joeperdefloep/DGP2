@@ -12923,15 +12923,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 1, y: 14, z: 0}
-    second:
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: -2, y: 15, z: 0}
     second:
       m_TileIndex: 0
@@ -14356,7 +14347,7 @@ Tilemap:
       m_ColliderType: 1
   m_AnimatedTiles: {}
   m_TileAssetArray:
-  - m_RefCount: 1419
+  - m_RefCount: 1418
     m_Data: {fileID: 11400000, guid: b81d266997589624e899aa475b1d5694, type: 2}
   - m_RefCount: 41
     m_Data: {fileID: 11400000, guid: 87faa7290fa90864a9376eb5e13cd624, type: 2}
@@ -14375,7 +14366,7 @@ Tilemap:
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 75fde95111d3a7645b6305015688d5db, type: 2}
   m_TileSpriteArray:
-  - m_RefCount: 1419
+  - m_RefCount: 1418
     m_Data: {fileID: 21300000, guid: cc9b1557a9eb39747afb8947f7bfb2d3, type: 3}
   - m_RefCount: 41
     m_Data: {fileID: 21300000, guid: eae3b598054ac214f8cb8b5b48635695, type: 3}
@@ -14394,7 +14385,7 @@ Tilemap:
   - m_RefCount: 8
     m_Data: {fileID: 21300000, guid: df4360894a13f414e99c1a24beca934c, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 1489
+  - m_RefCount: 1488
     m_Data:
       e00: 1
       e01: 0
@@ -14467,7 +14458,7 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 1552
+  - m_RefCount: 1551
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -14492,6 +14483,7 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1 &192767213
 GameObject:
@@ -14572,6 +14564,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+>>>>>>> parent of 8a4c51d... New Code + Door mechanics
 --- !u!1 &256018254
 =======
 --- !u!1 &145103596
@@ -22889,6 +22883,7 @@ GameObject:
   - component: {fileID: 1507792248}
   - component: {fileID: 1507792247}
   - component: {fileID: 1507792249}
+  - component: {fileID: 1507792250}
   m_Layer: 11
   m_Name: Doors
   m_TagString: Untagged
@@ -23238,6 +23233,27 @@ CompositeCollider2D:
       - {x: 35.5, y: -30.046873}
       - {x: 39.5, y: -30.046873}
   m_VertexDistance: 0.0005
+--- !u!114 &1507792250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507792243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24069a278d5e4cb41ab1c7df6a08ea91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speaks: {fileID: 0}
+  inventory: 0
+  openable: 1
+  locked: 0
+  canTalk: 0
+  itemType: 
+  itemNeeded: {fileID: 0}
+  coinsNeeded: 0
+  message: 
 --- !u!1 &1614765451
 GameObject:
   m_ObjectHideFlags: 0
