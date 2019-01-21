@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
         health -= damage;
         for (int i = 0; i < 11; i = i+2) {
             if (health == i) {
-                emptyHeartContainer[i/2].fillAmount =
+                emptyHeartContainer[i / 2].fillAmount = 1 ;
             }
         }
         if (health <= 0)
