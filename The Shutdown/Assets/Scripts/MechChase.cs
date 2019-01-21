@@ -57,6 +57,18 @@ public class MechChase : MonoBehaviour
                 anim.SetBool("Up", false);
                 anim.SetBool("Down", false);
             }
+            else if (angle < -45 && angle > -135)
+            {
+                anim.SetBool("WalkRight", false);
+                anim.SetBool("WalkLeft", false);
+                anim.SetBool("WalkUp", false);
+                anim.SetBool("WalkDown", true);
+
+                anim.SetBool("Right", false);
+                anim.SetBool("Left", false);
+                anim.SetBool("Up", false);
+                anim.SetBool("Down", false);
+            }
             else if (angle < -135 || angle > 135)
             {
                 anim.SetBool("WalkRight", false);
@@ -69,18 +81,7 @@ public class MechChase : MonoBehaviour
                 anim.SetBool("Up", false);
                 anim.SetBool("Down", false);
             }
-            else if (angle < -45 && angle > -135)
-            {
-                anim.SetBool("WalkRight", false);
-                anim.SetBool("WalkLeft", false);
-                anim.SetBool("WalkUp", false);
-                anim.SetBool("WalkDown", true);
-                
-                anim.SetBool("Right", false);
-                anim.SetBool("Left", false);
-                anim.SetBool("Up", false);
-                anim.SetBool("Down", false);
-            }
+            
             // GetComponent<PatrolAI>().enabled = false;
         }
         else
@@ -109,24 +110,24 @@ public class MechChase : MonoBehaviour
                 anim.SetBool("WalkUp", false);
                 anim.SetBool("WalkDown", false);
             }
-            else if (angle < -135 || angle > 135)
-            {
-                anim.SetBool("Right", false);
-                anim.SetBool("Left", true);
-                anim.SetBool("Up", false);
-                anim.SetBool("Down", false);
-
-                anim.SetBool("WalkRight", false);
-                anim.SetBool("WalkLeft", false);
-                anim.SetBool("WalkUp", false);
-                anim.SetBool("WalkDown", false);
-            }
             else if (angle < -45 && angle > -135)
             {
                 anim.SetBool("Right", false);
                 anim.SetBool("Left", false);
                 anim.SetBool("Up", false);
                 anim.SetBool("Down", true);
+
+                anim.SetBool("WalkRight", false);
+                anim.SetBool("WalkLeft", false);
+                anim.SetBool("WalkUp", false);
+                anim.SetBool("WalkDown", false);
+            }
+            else if (angle < -135 || angle > 135)
+            {
+                anim.SetBool("Right", false);
+                anim.SetBool("Left", true);
+                anim.SetBool("Up", false);
+                anim.SetBool("Down", false);
 
                 anim.SetBool("WalkRight", false);
                 anim.SetBool("WalkLeft", false);
