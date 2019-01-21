@@ -14827,7 +14827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ad2f4177a3112b458a11c7d0be53f7e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 0
+  health: 10
   heartContainer:
   - {fileID: 117642897}
   - {fileID: 1534416000}
@@ -22196,6 +22196,7 @@ GameObject:
   - component: {fileID: 1968428947}
   - component: {fileID: 1968428944}
   - component: {fileID: 1968428948}
+  - component: {fileID: 1968428949}
   m_Layer: 0
   m_Name: Partolling Orb Hor
   m_TagString: Untagged
@@ -22316,6 +22317,22 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.55
+--- !u!114 &1968428949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968428943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3c1a2a4cbf0164408cd04c63faf9e24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 338759988}
+  attackRange: 1.5
+  damage: 1
+  attackDelay: 1.5
 --- !u!1 &2093578964
 GameObject:
   m_ObjectHideFlags: 0
