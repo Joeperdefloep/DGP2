@@ -264,7 +264,6 @@ MonoBehaviour:
   target: {fileID: 338759988}
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
   chaseRange: 3
   anim: {fileID: 60214123}
 =======
@@ -276,9 +275,6 @@ MonoBehaviour:
 >>>>>>> parent of f4585ff... Mech chase animations
 =======
 >>>>>>> parent of 2045aa9... Merge branch 'master' of https://github.com/Joeperdefloep/DGP2
-=======
-  chaseRange: 500
->>>>>>> parent of f4585ff... Mech chase animations
 --- !u!1 &84456739
 GameObject:
   m_ObjectHideFlags: 0

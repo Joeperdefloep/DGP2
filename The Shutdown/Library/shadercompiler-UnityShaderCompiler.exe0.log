@@ -2,7 +2,6 @@ Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
 <<<<<<< HEAD
 <<<<<<< HEAD
-<<<<<<< HEAD
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
@@ -43,5 +42,3 @@ Cmd: compileSnippet
 >>>>>>> parent of 957e6e3... working on healthsystem
 =======
 >>>>>>> parent of b080e0a... Health system done
-=======
->>>>>>> parent of f4585ff... Mech chase animations
