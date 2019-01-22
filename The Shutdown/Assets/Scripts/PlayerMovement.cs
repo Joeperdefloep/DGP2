@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour {
     public Animator anim;
 
     public Transform attackPoint;
+    public float attackDisplacement;
 
     private void Start()
     {
@@ -37,7 +38,7 @@ public class PlayerMovement : MonoBehaviour {
             anim.SetBool("Right", true);
             anim.SetBool("Up", false);
             anim.SetBool("Down", false);
-            attackPoint.position = Vector2.right;
+            attackPoint.position = new Vector2(attackDisplacement, 0);
             attackPoint.position += transform.position;
         }
         //Idle left
@@ -47,7 +48,7 @@ public class PlayerMovement : MonoBehaviour {
             anim.SetBool("Right", false);
             anim.SetBool("Up", false);
             anim.SetBool("Down", false);
-            attackPoint.position = Vector2.left;
+            attackPoint.position = new Vector2(-attackDisplacement, 0);
             attackPoint.position += transform.position;
         }
         //Idle up
@@ -57,7 +58,7 @@ public class PlayerMovement : MonoBehaviour {
             anim.SetBool("Right", false);
             anim.SetBool("Up", true);
             anim.SetBool("Down", false);
-            attackPoint.position = Vector2.up;
+            attackPoint.position = new Vector2(0, attackDisplacement);
             attackPoint.position += transform.position;
         }
         //Idle down
@@ -67,7 +68,7 @@ public class PlayerMovement : MonoBehaviour {
             anim.SetBool("Right", false);
             anim.SetBool("Up", false);
             anim.SetBool("Down", true);
-            attackPoint.position = Vector2.down;
+            attackPoint.position = new Vector2(0, -attackDisplacement);
             attackPoint.position += transform.position;
         }
 
@@ -75,7 +76,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey("a") || Input.GetKey("left"))
         {
             anim.SetBool("WalkLeft", true);
-            attackPoint.position = Vector2.left;
+            attackPoint.position = new Vector2(-attackDisplacement, 0);
             attackPoint.position += transform.position;
         }
         else
@@ -86,7 +87,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
             anim.SetBool("WalkRight", true);
-            attackPoint.position = Vector2.right;
+            attackPoint.position = new Vector2(attackDisplacement, 0);
             attackPoint.position += transform.position;
         }
         else
@@ -96,7 +97,7 @@ public class PlayerMovement : MonoBehaviour {
         //Walking Up
         if (Input.GetKey("w") || Input.GetKey("up"))
         {
-            attackPoint.position = Vector2.up;
+            attackPoint.position = new Vector2(0, attackDisplacement);
             attackPoint.position += transform.position;
             anim.SetBool("WalkUp", true);
         }
@@ -108,7 +109,7 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey("s") || Input.GetKey("down"))
         {
             anim.SetBool("WalkDown", true);
-            attackPoint.position = Vector2.down;
+            attackPoint.position = new Vector2(0, -attackDisplacement);
             attackPoint.position += transform.position;
         }
         else

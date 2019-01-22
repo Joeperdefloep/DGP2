@@ -14666,7 +14666,8 @@ MonoBehaviour:
   posY: 0
   posZ: 0
   anim: {fileID: 338759989}
-  attackPoint: {fileID: 0}
+  attackPoint: {fileID: 1380957076}
+  attackDisplacement: 0.2
 --- !u!212 &338759987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14857,7 +14858,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   meleeDamage: 2
-  meleeRange: 0.5
+  meleeRange: 1
 --- !u!1 &347032990
 GameObject:
   m_ObjectHideFlags: 0
@@ -21676,7 +21677,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0575c63e44ecb7441a70c30e6a1d1447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 4
 --- !u!1 &1443182630
 GameObject:
   m_ObjectHideFlags: 0
@@ -22407,7 +22408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0575c63e44ecb7441a70c30e6a1d1447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
+  health: 4
 --- !u!1 &2093578964
 GameObject:
   m_ObjectHideFlags: 0

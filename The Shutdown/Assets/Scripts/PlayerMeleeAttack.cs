@@ -17,14 +17,16 @@ public class PlayerMeleeAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("m"))
+        if (Input.GetButtonDown("Fire2"))
         {
+            Debug.Log("Melee Attack");
             Movement = GetComponent<PlayerMovement>();
             Collider2D[] hitObjects = Physics2D.OverlapCircleAll(Movement.attackPoint.position, meleeRange);
             //check to see if any objects/enemies are present (except the player)
             if (hitObjects.Length > 1)
             {
-                hitObjects[1].SendMessage("TakeDamageEnemy", meleeDamage, SendMessageOptions.DontRequireReceiver);
+                Debug.Log("Melee Attack on enemy");
+                hitObjects[0].SendMessage("TakeDamageEnemy", meleeDamage, SendMessageOptions.DontRequireReceiver);
             }
         }
     }
