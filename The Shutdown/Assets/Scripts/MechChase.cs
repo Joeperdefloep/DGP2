@@ -8,6 +8,7 @@ public class MechChase : MonoBehaviour
     public Transform target;
     public float chaseRange;
 
+    public Animator anim;
 
     // Start is called before the first frame update
     void Start()
@@ -20,18 +21,17 @@ public class MechChase : MonoBehaviour
         // Chasing player AI
         //Get the distance to the target and check to see if it is close enough to chase
         float distanceToTarget = Vector3.Distance(transform.position, target.position);
+        Vector3 targetDir = target.position - transform.position;
+        float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
         if (distanceToTarget < chaseRange)
         {
             //Start chasing the target - turn and move towards the target
-            Vector3 targetDir = target.position - transform.position;
-            float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg;
          // Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
          // transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 180);
 
             //transform.Translate(Vector3.up * Time.deltaTime * speed);
             transform.Translate(targetDir.normalized * Time.deltaTime * speed);
             Debug.Log(angle);
-<<<<<<< HEAD
 
             if (angle < 45 && angle > -45)
             {
@@ -135,13 +135,6 @@ public class MechChase : MonoBehaviour
                 anim.SetBool("WalkDown", false);
             }
             // GetComponent<PatrolAI>().enabled = true;
-=======
-         // GetComponent<PatrolAI>().enabled = false;
-        }
-        else
-        {
-         // GetComponent<PatrolAI>().enabled = true;
->>>>>>> parent of f4585ff... Mech chase animations
         }
     }
 }
