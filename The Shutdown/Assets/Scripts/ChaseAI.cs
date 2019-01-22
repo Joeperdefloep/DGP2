@@ -9,6 +9,7 @@ public class ChaseAI : MonoBehaviour
     public float chaseRange;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,13 +30,6 @@ public class ChaseAI : MonoBehaviour
             transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 180);
 
             transform.Translate(Vector3.up * Time.deltaTime * speed);
-            //transform.Translate(targetDir.normalized * Time.deltaTime * speed);
-
-            GetComponent<PatrolAI>().enabled = false;
-        }
-        else
-        {
-            GetComponent<PatrolAI>().enabled = true;
         }
     }
 }
