@@ -5,7 +5,6 @@ public class PlayerMovement : MonoBehaviour {
     public float playerSpeed;
     public GameObject player;
     public Inventory inventory;
-    
 
     public float posX;
     public float posY;
@@ -13,29 +12,33 @@ public class PlayerMovement : MonoBehaviour {
 
     public Animator anim;
 
+    public Transform attackPoint;
+
     private void Start()
     {
         anim = GetComponent<Animator>();
-            posX = PlayerPrefs.GetFloat("positieX");
-            posY = PlayerPrefs.GetFloat("positieY");
-            posZ = PlayerPrefs.GetFloat("positieZ");
-            Vector3 posVec = new Vector3(posX, posY, posZ);
-            player.transform.position = posVec;
+        posX = PlayerPrefs.GetFloat("positieX");
+        posY = PlayerPrefs.GetFloat("positieY");
+        posZ = PlayerPrefs.GetFloat("positieZ");
+        Vector3 posVec = new Vector3(posX, posY, posZ);
+        player.transform.position = posVec;
     }
 
 
     // Update is called once per frame
-    void FixedUpdate () {
+    void FixedUpdate() {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
 
         //Idle right
-        if(horizontal > .01f)
+        if (horizontal > .01f)
         {
             anim.SetBool("Left", false);
             anim.SetBool("Right", true);
             anim.SetBool("Up", false);
             anim.SetBool("Down", false);
+            attackPoint.position = Vector2.right;
+            attackPoint.position += transform.position;
         }
         //Idle left
         if (horizontal < -.01f)
@@ -44,6 +47,8 @@ public class PlayerMovement : MonoBehaviour {
             anim.SetBool("Right", false);
             anim.SetBool("Up", false);
             anim.SetBool("Down", false);
+            attackPoint.position = Vector2.left;
+            attackPoint.position += transform.position;
         }
         //Idle up
         if (vertical > .01f)
@@ -52,6 +57,8 @@ public class PlayerMovement : MonoBehaviour {
             anim.SetBool("Right", false);
             anim.SetBool("Up", true);
             anim.SetBool("Down", false);
+            attackPoint.position = Vector2.up;
+            attackPoint.position += transform.position;
         }
         //Idle down
         if (vertical < -.01f)
@@ -60,12 +67,16 @@ public class PlayerMovement : MonoBehaviour {
             anim.SetBool("Right", false);
             anim.SetBool("Up", false);
             anim.SetBool("Down", true);
+            attackPoint.position = Vector2.down;
+            attackPoint.position += transform.position;
         }
 
         //Walking Left
         if (Input.GetKey("a") || Input.GetKey("left"))
         {
             anim.SetBool("WalkLeft", true);
+            attackPoint.position = Vector2.left;
+            attackPoint.position += transform.position;
         }
         else
         {
@@ -75,6 +86,8 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey("d") || Input.GetKey("right"))
         {
             anim.SetBool("WalkRight", true);
+            attackPoint.position = Vector2.right;
+            attackPoint.position += transform.position;
         }
         else
         {
@@ -83,6 +96,8 @@ public class PlayerMovement : MonoBehaviour {
         //Walking Up
         if (Input.GetKey("w") || Input.GetKey("up"))
         {
+            attackPoint.position = Vector2.up;
+            attackPoint.position += transform.position;
             anim.SetBool("WalkUp", true);
         }
         else
@@ -93,6 +108,8 @@ public class PlayerMovement : MonoBehaviour {
         if (Input.GetKey("s") || Input.GetKey("down"))
         {
             anim.SetBool("WalkDown", true);
+            attackPoint.position = Vector2.down;
+            attackPoint.position += transform.position;
         }
         else
         {

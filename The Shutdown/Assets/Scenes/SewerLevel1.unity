@@ -14639,6 +14639,7 @@ GameObject:
   - component: {fileID: 338759990}
   - component: {fileID: 338759992}
   - component: {fileID: 338759993}
+  - component: {fileID: 338759994}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -14665,6 +14666,7 @@ MonoBehaviour:
   posY: 0
   posZ: 0
   anim: {fileID: 338759989}
+  attackPoint: {fileID: 0}
 --- !u!212 &338759987
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -14723,7 +14725,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 11.74, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1380957076}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -14841,6 +14844,20 @@ MonoBehaviour:
   - {fileID: 500803264}
   - {fileID: 229943148}
   fillAmount: 0.5
+--- !u!114 &338759994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338759985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acdd32e56bb145043b73f981cff0776b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  meleeDamage: 2
+  meleeRange: 0.5
 --- !u!1 &347032990
 GameObject:
   m_ObjectHideFlags: 0
@@ -21304,6 +21321,36 @@ MonoBehaviour:
   itemNeeded: {fileID: 0}
   coinsNeeded: 0
   message: 
+--- !u!1 &1380957075
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1380957076}
+  m_Layer: 0
+  m_Name: MeleeAttackPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1380957076
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1380957075}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.97, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 338759988}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1410176669
 GameObject:
   m_ObjectHideFlags: 0
@@ -21479,6 +21526,7 @@ GameObject:
   - component: {fileID: 1442519911}
   - component: {fileID: 1442519910}
   - component: {fileID: 1442519914}
+  - component: {fileID: 1442519916}
   - component: {fileID: 1442519915}
   m_Layer: 0
   m_Name: Partolling Orb Ver
@@ -21616,6 +21664,19 @@ MonoBehaviour:
   attackRange: 1.5
   damage: 1
   attackDelay: 1.5
+--- !u!114 &1442519916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442519909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0575c63e44ecb7441a70c30e6a1d1447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &1443182630
 GameObject:
   m_ObjectHideFlags: 0
@@ -22197,6 +22258,7 @@ GameObject:
   - component: {fileID: 1968428944}
   - component: {fileID: 1968428948}
   - component: {fileID: 1968428949}
+  - component: {fileID: 1968428950}
   m_Layer: 0
   m_Name: Partolling Orb Hor
   m_TagString: Untagged
@@ -22333,6 +22395,19 @@ MonoBehaviour:
   attackRange: 1.5
   damage: 1
   attackDelay: 1.5
+--- !u!114 &1968428950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968428943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0575c63e44ecb7441a70c30e6a1d1447, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &2093578964
 GameObject:
   m_ObjectHideFlags: 0
