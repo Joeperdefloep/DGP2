@@ -83,7 +83,6 @@
     <Compile Include="Assets\Scripts\OrbChase.cs" />
     <Compile Include="Assets\Scripts\PanelManager.cs" />
     <Compile Include="Assets\Scripts\PatrolAI.cs" />
-    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\PlayerMeleeAttack.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
