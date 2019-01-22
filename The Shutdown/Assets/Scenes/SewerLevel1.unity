@@ -226,12 +226,8 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   speed: 2
   target: {fileID: 338759988}
-<<<<<<< HEAD
   chaseRange: 3
   anim: {fileID: 60214123}
-=======
-  chaseRange: 500
->>>>>>> parent of 2045aa9... Merge branch 'master' of https://github.com/Joeperdefloep/DGP2
 --- !u!1 &84456739
 GameObject:
   m_ObjectHideFlags: 0
@@ -14787,7 +14783,6 @@ MonoBehaviour:
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 0}
   movement: {fileID: 338759986}
-<<<<<<< HEAD
 --- !u!114 &338759993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14815,9 +14810,6 @@ MonoBehaviour:
   - {fileID: 229943148}
   fillAmount: 0.5
 --- !u!1 &347032990
-=======
---- !u!1 &608676367
->>>>>>> parent of 2045aa9... Merge branch 'master' of https://github.com/Joeperdefloep/DGP2
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
