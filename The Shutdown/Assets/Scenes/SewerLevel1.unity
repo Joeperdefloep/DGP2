@@ -15032,9 +15032,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-<<<<<<< HEAD
->>>>>>> parent of b080e0a... Health system done
-=======
 >>>>>>> parent of b080e0a... Health system done
   heartContainer:
   - {fileID: 117642897}
@@ -22430,11 +22427,8 @@ GameObject:
   - component: {fileID: 1968428947}
   - component: {fileID: 1968428948}
 <<<<<<< HEAD
-<<<<<<< HEAD
   - component: {fileID: 1968428949}
   - component: {fileID: 1968428944}
-=======
->>>>>>> parent of b080e0a... Health system done
 =======
 >>>>>>> parent of b080e0a... Health system done
   m_Layer: 0
@@ -22571,7 +22565,6 @@ CircleCollider2D:
   serializedVersion: 2
   m_Radius: 1.55
 <<<<<<< HEAD
-<<<<<<< HEAD
 --- !u!114 &1968428949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22600,8 +22593,6 @@ MonoBehaviour:
   - {fileID: 256018255}
   speed: 4
 >>>>>>> parent of 4b7ed49... Main Menu Merge after conflict
-=======
->>>>>>> parent of b080e0a... Health system done
 --- !u!1 &2093578964
 GameObject:
   m_ObjectHideFlags: 0
