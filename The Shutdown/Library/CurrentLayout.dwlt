@@ -27,11 +27,15 @@ MonoBehaviour:
 =======
   m_Title: 
   m_RootView: {fileID: 11}
+<<<<<<< HEAD
   m_MinSize: {x: 950, y: 648}
 >>>>>>> parent of b080e0a... Health system done
 =======
   m_MinSize: {x: 950, y: 300}
 >>>>>>> parent of 4db8848... Animation Optimization
+=======
+  m_MinSize: {x: 950, y: 300}
+>>>>>>> parent of b807d91... Healthbar almost finished
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -96,9 +100,10 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 1920
     height: 947
-  m_MinSize: {x: 713, y: 598}
-  m_MaxSize: {x: 18008, y: 18048}
+  m_MinSize: {x: 713, y: 622}
+  m_MaxSize: {x: 18008, y: 18072}
   vertical: 1
+<<<<<<< HEAD
   controlID: 34
 =======
     width: 986
@@ -108,6 +113,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 29
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  controlID: 106
+>>>>>>> parent of b807d91... Healthbar almost finished
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -156,6 +164,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 464
     height: 744
+<<<<<<< HEAD
   m_MinSize: {x: 232, y: 474}
   m_MaxSize: {x: 10002, y: 14024}
 =======
@@ -179,6 +188,12 @@ MonoBehaviour:
   vertical: 1
   controlID: 142
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  m_MinSize: {x: 232, y: 498}
+  m_MaxSize: {x: 10002, y: 14048}
+  vertical: 1
+  controlID: 84
+>>>>>>> parent of b807d91... Healthbar almost finished
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,6 +218,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 464
     height: 333
+<<<<<<< HEAD
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 =======
@@ -211,6 +227,10 @@ MonoBehaviour:
   m_MinSize: {x: 202, y: 224}
   m_MaxSize: {x: 4002, y: 4024}
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  m_MinSize: {x: 202, y: 224}
+  m_MaxSize: {x: 4002, y: 4024}
+>>>>>>> parent of b807d91... Healthbar almost finished
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -251,9 +271,10 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 1920
     height: 744
-  m_MinSize: {x: 713, y: 474}
-  m_MaxSize: {x: 18008, y: 14024}
+  m_MinSize: {x: 713, y: 498}
+  m_MaxSize: {x: 18008, y: 14048}
   vertical: 0
+<<<<<<< HEAD
   controlID: 35
 =======
     width: 811
@@ -275,6 +296,9 @@ MonoBehaviour:
   vertical: 0
   controlID: 30
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  controlID: 107
+>>>>>>> parent of b807d91... Healthbar almost finished
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,6 +320,7 @@ MonoBehaviour:
     y: 412
     width: 1123
     height: 332
+<<<<<<< HEAD
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
 =======
@@ -305,6 +330,10 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 224}
   m_MaxSize: {x: 4004, y: 4024}
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  m_MinSize: {x: 204, y: 224}
+  m_MaxSize: {x: 4004, y: 4024}
+>>>>>>> parent of b807d91... Healthbar almost finished
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -347,6 +376,7 @@ MonoBehaviour:
     y: 0
     width: 333
     height: 744
+<<<<<<< HEAD
   m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
 =======
@@ -357,6 +387,10 @@ MonoBehaviour:
   m_MinSize: {x: 277, y: 74}
   m_MaxSize: {x: 4002, y: 4024}
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  m_MinSize: {x: 277, y: 74}
+  m_MaxSize: {x: 4002, y: 4024}
+>>>>>>> parent of b807d91... Healthbar almost finished
   m_ActualView: {fileID: 22}
 =======
     x: 0
@@ -397,6 +431,7 @@ MonoBehaviour:
   m_MinSize: {x: 204, y: 348}
   m_MaxSize: {x: 4004, y: 8048}
   vertical: 1
+<<<<<<< HEAD
   controlID: 171
 =======
     width: 448
@@ -418,6 +453,9 @@ MonoBehaviour:
   vertical: 1
   controlID: 78
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  controlID: 172
+>>>>>>> parent of b807d91... Healthbar almost finished
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -542,10 +580,14 @@ MonoBehaviour:
   m_MaxSize: {x: 8006, y: 8048}
   vertical: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   controlID: 36
 =======
   controlID: 31
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  controlID: 108
+>>>>>>> parent of b807d91... Healthbar almost finished
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -678,6 +720,7 @@ MonoBehaviour:
 <<<<<<< HEAD
     width: 1123
     height: 412
+<<<<<<< HEAD
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
 =======
@@ -686,6 +729,10 @@ MonoBehaviour:
   m_MinSize: {x: 104, y: 124}
   m_MaxSize: {x: 4004, y: 4024}
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+  m_MinSize: {x: 104, y: 124}
+  m_MaxSize: {x: 4004, y: 4024}
+>>>>>>> parent of b807d91... Healthbar almost finished
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 18}
@@ -907,6 +954,7 @@ MonoBehaviour:
   m_Position:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: {x: 0, y: 11.74, z: 0}
     speed: 2
     m_Value: {x: 0, y: 11.74, z: 0}
@@ -920,6 +968,11 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 167.52759, y: 581.3874, z: 17.375}
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+    m_Target: {x: -4.6261773, y: 3.7124653, z: -0.23278898}
+    speed: 2
+    m_Value: {x: -4.6261773, y: 3.7124653, z: -0.23278898}
+>>>>>>> parent of b807d91... Healthbar almost finished
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -953,6 +1006,7 @@ MonoBehaviour:
   m_Size:
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_Target: 2.3581164
     speed: 2
     m_Value: 2.3581164
@@ -966,6 +1020,11 @@ MonoBehaviour:
     speed: 2
     m_Value: 377.26324
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+    m_Target: 25.689102
+    speed: 2
+    m_Value: 25.689102
+>>>>>>> parent of b807d91... Healthbar almost finished
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1049,6 +1108,7 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
+<<<<<<< HEAD
       scrollPos: {x: 0, y: 40}
       m_SelectedIDs: 90070000
       m_LastClickedID: 0
@@ -1078,6 +1138,12 @@ MonoBehaviour:
       m_LastClickedID: -17128
       m_ExpandedIDs: 20bfffff4ac5ffff
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 2e190000
+      m_LastClickedID: 6446
+      m_ExpandedIDs: d4fbffff14190000b6190000
+>>>>>>> parent of b807d91... Healthbar almost finished
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1151,6 +1217,7 @@ MonoBehaviour:
   m_FolderTreeState:
 <<<<<<< HEAD
     scrollPos: {x: 0, y: 206}
+<<<<<<< HEAD
     m_SelectedIDs: 68110000
     m_LastClickedID: 4456
 <<<<<<< HEAD
@@ -1168,6 +1235,11 @@ MonoBehaviour:
     m_LastClickedID: 17814
     m_ExpandedIDs: 00000000ce4300003a4400005c440000a64500006646000000ca9a3b
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+    m_SelectedIDs: 66110000
+    m_LastClickedID: 4454
+    m_ExpandedIDs: 00000000b4090000f60c0000920d0000b61400007218000000ca9a3b
+>>>>>>> parent of b807d91... Healthbar almost finished
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name:
@@ -1198,6 +1270,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ExpandedIDs: 00000000b6090000f80c0000940d0000b814000074180000
 =======
     m_ExpandedIDs: 000000007c260000582a00007c310000
@@ -1208,6 +1281,9 @@ MonoBehaviour:
 =======
     m_ExpandedIDs: 00000000ce4300003a4400005c440000a6450000
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+    m_ExpandedIDs: 00000000b4090000f60c0000920d0000b614000072180000
+>>>>>>> parent of b807d91... Healthbar almost finished
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name:
@@ -1235,7 +1311,7 @@ MonoBehaviour:
     m_SelectedInstanceIDs:
     m_LastClickedInstanceID: 0
     m_HadKeyboardFocusLastEvent: 1
-    m_ExpandedInstanceIDs: c6230000762d0000a22d00002e0b00008e0b0000a60b00002a2e0000ec0a0000220c0000320c0000a80b0000000000007aecffff8894ffffe60c00008a3400002e380000c63500003625ffffe033000062340000d8350000be140000623e00004a3e000034370000763d000072460000a6120000
+    m_ExpandedInstanceIDs: c6230000762d0000a22d00002e0b00008e0b0000a60b00002a2e0000ec0a0000220c0000320c0000a80b0000000000007aecffff8894ffffe60c00008a3400002e380000c63500003625ffffe033000062340000d8350000be140000623e00004a3e000034370000763d000072460000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name:
@@ -1260,10 +1336,14 @@ MonoBehaviour:
       m_ResourceFile:
     m_NewAssetIndexInList: -1
 <<<<<<< HEAD
+<<<<<<< HEAD
     m_ScrollPosition: {x: 0, y: 707.9918}
 =======
     m_ScrollPosition: {x: 0, y: 46}
 >>>>>>> parent of 957e6e3... working on healthsystem
+=======
+    m_ScrollPosition: {x: 0, y: 542}
+>>>>>>> parent of b807d91... Healthbar almost finished
     m_GridSize: 96
   m_DirectoriesAreaWidth: 153
 --- !u!114 &21
