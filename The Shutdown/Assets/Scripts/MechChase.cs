@@ -32,6 +32,7 @@ public class MechChase : MonoBehaviour
             transform.Translate(targetDir.normalized * Time.deltaTime * speed);
             Debug.Log(angle);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
             if (angle < 45 && angle > -45)
             {
@@ -134,6 +135,13 @@ public class MechChase : MonoBehaviour
                 anim.SetBool("WalkDown", false);
             }
             // GetComponent<PatrolAI>().enabled = true;
+=======
+         // GetComponent<PatrolAI>().enabled = false;
+        }
+        else
+        {
+         // GetComponent<PatrolAI>().enabled = true;
+>>>>>>> parent of f4585ff... Mech chase animations
 =======
          // GetComponent<PatrolAI>().enabled = false;
         }
