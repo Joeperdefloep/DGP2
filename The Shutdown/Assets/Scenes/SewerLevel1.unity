@@ -14798,9 +14798,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ad2f4177a3112b458a11c7d0be53f7e, type: 3}
+<<<<<<< HEAD
   m_Name:
   m_EditorClassIdentifier:
   health: 10
+=======
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+>>>>>>> parent of b080e0a... Health system done
   heartContainer:
   - {fileID: 117642897}
   - {fileID: 1534416000}
@@ -21320,8 +21326,11 @@ GameObject:
   - component: {fileID: 1968428945}
   - component: {fileID: 1968428947}
   - component: {fileID: 1968428948}
+<<<<<<< HEAD
   - component: {fileID: 1968428949}
   - component: {fileID: 1968428944}
+=======
+>>>>>>> parent of b080e0a... Health system done
   m_Layer: 0
   m_Name: Partolling Orb Hor
   m_TagString: Untagged
@@ -21441,6 +21450,7 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.55
+<<<<<<< HEAD
 --- !u!114 &1968428949
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21457,6 +21467,8 @@ MonoBehaviour:
   attackRange: 1.5
   damage: 1
   attackDelay: 1.5
+=======
+>>>>>>> parent of b080e0a... Health system done
 --- !u!1 &2093578964
 GameObject:
   m_ObjectHideFlags: 0
