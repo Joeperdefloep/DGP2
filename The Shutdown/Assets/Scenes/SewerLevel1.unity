@@ -134,16 +134,29 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54084271}
+  m_GameObject: {fileID: 60214122}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.6939116, y: 5.159497, z: -0.122712016}
+  m_LocalPosition: {x: -1.06, y: 1.62, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1442519913}
-  - {fileID: 1968428946}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &60214126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 60214122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c30c3280b948ba3428f367ec0abe9dc9, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  speed: 2
+  target: {fileID: 338759988}
+  chaseRange: 500
 --- !u!1 &84456739
 GameObject:
   m_ObjectHideFlags: 0
@@ -14345,8 +14358,8 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -25, y: -43, z: 0}
-  m_Size: {x: 68, y: 76, z: 1}
+  m_Origin: {x: -56, y: -43, z: 0}
+  m_Size: {x: 99, y: 76, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -14413,8 +14426,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -14451,7 +14464,7 @@ GameObject:
   - component: {fileID: 192767215}
   - component: {fileID: 192767214}
   m_Layer: 0
-  m_Name: doors_leaf_open
+  m_Name: Door1 - Open
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14566,8 +14579,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -14617,7 +14630,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 256018254}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.448998, y: 1.5420318, z: -0.019140625}
+  m_LocalPosition: {x: -15.448998, y: 1.54, z: -0.019140625}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1443182631}
@@ -14656,8 +14669,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5e91a3eb6f72c6243b48a01c64d0c409, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   playerSpeed: 4
   player: {fileID: 338759985}
   inventory: {fileID: 0}
@@ -14742,7 +14755,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -14809,8 +14822,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4161c74d6322b8499fbe696f180fdde, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   currentInterObj: {fileID: 0}
   currentInterObjScript: {fileID: 0}
   inventory: {fileID: 0}
@@ -14825,8 +14838,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3ad2f4177a3112b458a11c7d0be53f7e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   health: 10
   heartContainer:
   - {fileID: 117642897}
@@ -14888,8 +14901,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -14962,8 +14975,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -15036,8 +15049,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -15110,8 +15123,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -15184,8 +15197,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -15304,8 +15317,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 28084560aa174274d8da271913cd8fe4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   target: {fileID: 338759988}
   smoothTime: 0.3
 --- !u!1 &847034359
@@ -15355,8 +15368,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 2100000, guid: f385d0af027fa3b4c88d921455a73928, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -17313,15 +17326,6 @@ Tilemap:
       m_TileFlags: 1
       m_ColliderType: 1
   - first: {x: 42, y: -20, z: 0}
-    second:
-      m_TileIndex: 6
-      m_TileSpriteIndex: 6
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: -52, y: -19, z: 0}
     second:
       m_TileIndex: 6
       m_TileSpriteIndex: 6
@@ -19900,7 +19904,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: c865962de1a45c741bc1285443be71d2, type: 2}
   - m_RefCount: 16
     m_Data: {fileID: 11400000, guid: aa175048d8a0d07429fb7d1ec53f3707, type: 2}
-  - m_RefCount: 239
+  - m_RefCount: 238
     m_Data: {fileID: 11400000, guid: 43af735f5586b8447b6206d50dedb393, type: 2}
   - m_RefCount: 8
     m_Data: {fileID: 11400000, guid: 4bee4f2c235bbbd45ae7b873bc3d118d, type: 2}
@@ -19933,7 +19937,7 @@ Tilemap:
     m_Data: {fileID: 21300000, guid: 30bc91bba9820f44896ba2d624f6b577, type: 3}
   - m_RefCount: 16
     m_Data: {fileID: 21300000, guid: bf43aa097390fa948be2c512466d3690, type: 3}
-  - m_RefCount: 239
+  - m_RefCount: 238
     m_Data: {fileID: 21300000, guid: 1715d8a95f6eef3459c8493641497eda, type: 3}
   - m_RefCount: 8
     m_Data: {fileID: 21300000, guid: 2ff65544fea8e624786a75acd13a8950, type: 3}
@@ -19954,7 +19958,7 @@ Tilemap:
   - m_RefCount: 2
     m_Data: {fileID: 21300000, guid: a19742a69e0d5ae40a0f2577cb183255, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 479
+  - m_RefCount: 478
     m_Data:
       e00: 1
       e01: 0
@@ -20009,12 +20013,12 @@ Tilemap:
       e32: 0
       e33: 1
   m_TileColorArray:
-  - m_RefCount: 490
+  - m_RefCount: 489
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -52, y: -44, z: 0}
-  m_Size: {x: 103, y: 78, z: 1}
+  m_Origin: {x: -62, y: -44, z: 0}
+  m_Size: {x: 113, y: 78, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
@@ -20610,14 +20614,6 @@ CompositeCollider2D:
         Y: -350000000
       - X: -110000000
         Y: -430000000
-    - - X: -510000000
-        Y: -180000000
-      - X: -520000000
-        Y: -180000000
-      - X: -520000000
-        Y: -190000000
-      - X: -510000000
-        Y: -190000000
   m_CompositePaths:
     m_Paths:
     - - {x: -10, y: -36}
@@ -20898,10 +20894,6 @@ CompositeCollider2D:
       - {x: -2, y: -35}
       - {x: -11, y: -35}
       - {x: -11, y: -43}
-    - - {x: -51, y: -18}
-      - {x: -52, y: -18}
-      - {x: -52, y: -19}
-      - {x: -51, y: -19}
   m_VertexDistance: 0.0005
 --- !u!50 &851087391
 Rigidbody2D:
@@ -20985,8 +20977,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -21059,8 +21051,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -21115,8 +21107,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_IgnoreReversedGraphics: 1
   m_BlockingObjects: 0
   m_BlockingMask:
@@ -21132,8 +21124,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
@@ -21237,7 +21229,7 @@ GameObject:
   - component: {fileID: 1374725132}
   - component: {fileID: 1374725134}
   m_Layer: 0
-  m_Name: Door1
+  m_Name: Door1 - Closed
   m_TagString: interObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -21281,7 +21273,7 @@ Transform:
   m_LocalScale: {x: 3.966217, y: 4.043221, z: 1.0103}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1374725134
 MonoBehaviour:
@@ -21293,17 +21285,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24069a278d5e4cb41ab1c7df6a08ea91, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   speaks: {fileID: 0}
   inventory: 0
   openable: 1
   locked: 0
   canTalk: 0
-  itemType: 
+  itemType:
   itemNeeded: {fileID: 0}
   coinsNeeded: 0
-  message: 
+  message:
 --- !u!1 &1410176669
 GameObject:
   m_ObjectHideFlags: 0
@@ -21476,10 +21468,11 @@ GameObject:
   m_Component:
   - component: {fileID: 1442519913}
   - component: {fileID: 1442519912}
-  - component: {fileID: 1442519911}
   - component: {fileID: 1442519910}
   - component: {fileID: 1442519914}
   - component: {fileID: 1442519915}
+  - component: {fileID: 1442519911}
+  - component: {fileID: 1442519916}
   m_Layer: 0
   m_Name: Partolling Orb Ver
   m_TagString: Untagged
@@ -21502,7 +21495,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -21515,13 +21508,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1442519909}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08654ca843abdab4db1284f2e2778d58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Script: {fileID: 11500000, guid: 999d6e014af9f664bab964bd78216902, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
   patrolPoints:
   - {fileID: 1203112306}
   - {fileID: 84456740}
-  speed: 3
+  speed: 4
 --- !u!212 &1442519912
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21610,12 +21603,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3c1a2a4cbf0164408cd04c63faf9e24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   target: {fileID: 338759988}
   attackRange: 1.5
   damage: 1
   attackDelay: 1.5
+--- !u!114 &1442519916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442519909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f36c351814921054e89f5bae44c4b0f7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  speed: 2
+  target: {fileID: 338759988}
+  chaseRange: 3
 --- !u!1 &1443182630
 GameObject:
   m_ObjectHideFlags: 0
@@ -22060,8 +22068,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
@@ -22145,8 +22153,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_HorizontalAxis: Horizontal
   m_VerticalAxis: Vertical
   m_SubmitButton: Submit
@@ -22164,8 +22172,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   m_FirstSelected: {fileID: 0}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
@@ -22194,9 +22202,9 @@ GameObject:
   - component: {fileID: 1968428946}
   - component: {fileID: 1968428945}
   - component: {fileID: 1968428947}
-  - component: {fileID: 1968428944}
   - component: {fileID: 1968428948}
   - component: {fileID: 1968428949}
+  - component: {fileID: 1968428944}
   m_Layer: 0
   m_Name: Partolling Orb Hor
   m_TagString: Untagged
@@ -22213,13 +22221,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1968428943}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19e3395650505354db1b90c06e5d9b63, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  patrolPoints:
-  - {fileID: 1614765452}
-  - {fileID: 256018255}
-  speed: 5
+  m_Script: {fileID: 11500000, guid: f36c351814921054e89f5bae44c4b0f7, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  speed: 2
+  target: {fileID: 338759988}
+  chaseRange: 3
 --- !u!212 &1968428945
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -22297,7 +22304,7 @@ Animator:
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
-  m_WarningMessage: 
+  m_WarningMessage:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
@@ -22327,8 +22334,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a3c1a2a4cbf0164408cd04c63faf9e24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Name:
+  m_EditorClassIdentifier:
   target: {fileID: 338759988}
   attackRange: 1.5
   damage: 1
