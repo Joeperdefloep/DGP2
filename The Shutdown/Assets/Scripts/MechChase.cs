@@ -82,7 +82,7 @@ public class MechChase : MonoBehaviour
                 anim.SetBool("Down", false);
             }
             
-            // GetComponent<PatrolAI>().enabled = false;
+            
         }
         else
         {
@@ -134,7 +134,6 @@ public class MechChase : MonoBehaviour
                 anim.SetBool("WalkUp", false);
                 anim.SetBool("WalkDown", false);
             }
-            // GetComponent<PatrolAI>().enabled = true;
         }
     }
 }

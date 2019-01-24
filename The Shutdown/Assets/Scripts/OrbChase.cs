@@ -30,11 +30,13 @@ public class OrbChase : MonoBehaviour
 
             transform.Translate(Vector3.up * Time.deltaTime * speed);
 
-            GetComponent<PatrolAI>().enabled = false;
+            GetComponent<SpiderAIHor>().enabled = false;
+            GetComponent<SpiderAIVer>().enabled = false;
         }
         else
         {
-            GetComponent<PatrolAI>().enabled = true;
+            GetComponent<SpiderAIVer>().enabled = true;
+            GetComponent<SpiderAIHor>().enabled = true;
         }
     }
 }
