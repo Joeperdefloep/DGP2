@@ -2,14 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class RangedAttackAI : MonoBehaviour
 {
     public Transform target;
     public float attackRange;
-    public int damage;
     private float lastAttackTime;
     public float attackDelay;
-
+    
     public GameObject projectile;
     public float bulletForce;
 
@@ -27,10 +26,11 @@ public class NewBehaviourScript : MonoBehaviour
         float distanceToPlayer = Vector3.Distance(transform.position, target.position);
         if (distanceToPlayer < attackRange) {
             //Turn towards the target
-            Vector3 targetDir = target.position - transform.position;
-            float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
-            Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
+
+            //Vector3 targetDir = target.position - transform.position;
+            //float angle = Mathf.Atan2(targetDir.y, targetDir.x) * Mathf.Rad2Deg - 90f;
+            //Quaternion q = Quaternion.AngleAxis(angle, Vector3.forward);
+            //transform.rotation = Quaternion.RotateTowards(transform.rotation, q, 90 * Time.deltaTime);
             
             //Check to see if its time to attack
             if(Time.time > lastAttackTime + attackDelay){
@@ -39,6 +39,7 @@ public class NewBehaviourScript : MonoBehaviour
                 //Check to see if we hit anything and what it was
                 if (hit.transform == target) {
                     //Hit the player - fire projectile
+                    Debug.Log("Fired at player");
                     GameObject newBullet = Instantiate(projectile, transform.position, transform.rotation);
                     newBullet.GetComponent<Rigidbody2D>().AddRelativeForce(new Vector2(0f, bulletForce));
                     lastAttackTime = Time.time;

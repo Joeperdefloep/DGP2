@@ -31,7 +31,7 @@ public class MechChase : MonoBehaviour
 
             //transform.Translate(Vector3.up * Time.deltaTime * speed);
             transform.Translate(targetDir.normalized * Time.deltaTime * speed);
-            Debug.Log(angle);
+            //Debug.Log(angle);
 
             if (angle < 45 && angle > -45)
             {
