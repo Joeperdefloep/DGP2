@@ -4,7 +4,6 @@ public class PlayerMovement : MonoBehaviour {
 
     public float playerSpeed;
     public GameObject player;
-    public Inventory inventory;
 
     public float posX;
     public float posY;
@@ -121,9 +120,6 @@ public class PlayerMovement : MonoBehaviour {
 
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            PlayerPrefs.SetInt("muntjes", inventory.coinCount);
-            PlayerPrefs.SetInt("planken", inventory.plankCount);
-            PlayerPrefs.SetInt("schroeven", inventory.nailCount);
             PlayerPrefs.SetFloat("positieX", posX);
             PlayerPrefs.SetFloat("positieY", posY);
             PlayerPrefs.SetFloat("positieZ", posZ);
