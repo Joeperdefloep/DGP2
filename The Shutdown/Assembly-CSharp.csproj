@@ -61,6 +61,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Crafting Menu\ItemSlot.cs" />
+    <Compile Include="Assets\Crafting Menu\Script\InventoryTom.cs" />
+    <Compile Include="Assets\Crafting Menu\Script\Item.cs" />
     <Compile Include="Assets\CyberPunk\Scripts\Done_BGScroller.cs" />
     <Compile Include="Assets\CyberPunk\Scripts\Perspective2DSortMode.cs" />
     <Compile Include="Assets\HealthHeartSystem\Scripts\HealthBarController.cs" />
