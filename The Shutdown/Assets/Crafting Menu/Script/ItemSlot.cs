@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System;
 
-public class ItemSlot : MonoBehaviour, IPointerClickHandler
+public class ItemSlot : MonoBehaviour, IPointerClickHandler, IDragHandler, IBeginDragHandler, IEndDragHandler
 {
     [SerializeField] Image image;
 
@@ -39,11 +39,30 @@ public class ItemSlot : MonoBehaviour, IPointerClickHandler
 
     }
 
+    
+
     private void OnValidate()
     {
         if (image == null)
         {
             image = GetComponent<Image>();
         }
+    }
+
+    Vector2 originalPosition;
+
+    public void OnBeginDrag(PointerEventData eventData)
+    {
+        originalPosition = image.transform.position;
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
+    {
+        image.transform.position = originalPosition;
+    }
+
+    public void OnDrag(PointerEventData eventData)
+    {
+        image.transform.position = Input.mousePosition;
     }
 }

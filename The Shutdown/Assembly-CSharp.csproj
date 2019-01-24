@@ -61,9 +61,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Crafting Menu\Script\CraftingInput.cs" />
+    <Compile Include="Assets\Crafting Menu\Script\CraftingRecipe.cs" />
+    <Compile Include="Assets\Crafting Menu\Script\CraftingSlot.cs" />
     <Compile Include="Assets\Crafting Menu\Script\EquippableItem.cs" />
     <Compile Include="Assets\Crafting Menu\Script\InventoryTom.cs" />
     <Compile Include="Assets\Crafting Menu\Script\Item.cs" />
+    <Compile Include="Assets\Crafting Menu\Script\ItemContainer.cs" />
     <Compile Include="Assets\Crafting Menu\Script\ItemSlot.cs" />
     <Compile Include="Assets\CyberPunk\Scripts\Done_BGScroller.cs" />
     <Compile Include="Assets\CyberPunk\Scripts\Perspective2DSortMode.cs" />
