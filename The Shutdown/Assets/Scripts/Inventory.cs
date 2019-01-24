@@ -8,48 +8,10 @@ public class Inventory : MonoBehaviour {
     Vector3 pos;
 
     public GameObject[] inventory = new GameObject[10];
-    public Button[] invButton = new Button[10];
-    public Text coinCounter;
-    public Text plankCounter;
-    public Text nailCounter;
-
-    public int coinCount;
-    public int nailCount = 0;
-    public int plankCount = 0;
-  
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "MainScene")
-        {
-            if (PlayerPrefs.GetString("LastScene") != "Options")
-            {
-                coinCount = 2;
-                coinCounter.text = "x " + coinCount.ToString();
-                plankCounter.text = "x " + plankCount.ToString();
-                PlayerPrefs.SetString("LastScene", "MainScene");
-            }
-            else
-            {
-                coinCount = PlayerPrefs.GetInt("muntjes");
-                plankCount = PlayerPrefs.GetInt("planken");
-                nailCount = PlayerPrefs.GetInt("schroeven");
-            }
-        }
-        else
-        {
-            coinCount = PlayerPrefs.GetInt("muntjes");
-            plankCount = PlayerPrefs.GetInt("planken");
-            nailCount = PlayerPrefs.GetInt("schroeven");
-            if (PlayerPrefs.GetString("LastScene") == "BridgeScene")
-            {
-                plankCount = 0;
-                nailCount = 0;
-            }
-            coinCounter.text = "x " + coinCount.ToString();
-            plankCounter.text = "x " + plankCount.ToString();
-            nailCounter.text = "x " + nailCount.ToString();
-        }
+       
     }
 
     public void AddItem(GameObject item)
@@ -62,63 +24,12 @@ public class Inventory : MonoBehaviour {
         {
             if (inventory[i] == null)
             {
-                
                 //Update UI
-                if (item.name == "Coin")
-                {
-                    inventory[0] = item;
-                    coinCount++;
-                    Debug.Log("Total Coins: " + coinCount);
-                    coinCounter.text = "x " + coinCount.ToString();
-                    invButton[i].image.overrideSprite = item.GetComponent<SpriteRenderer>().sprite;
-                    Debug.Log(item.name + " was added to inventory");
-                    itemAdded = true;
-                    //Do something with that object
-                    item.SendMessage("DoInteraction");
-                    break;
-                }
-                if (item.name == "Plank")
-                {
-                    inventory[1] = item;
-                    plankCount++;
-                    Debug.Log("Total Planks: " + plankCount);
-                    plankCounter.text = "x " + plankCount.ToString();
-                    invButton[i].image.overrideSprite = item.GetComponent<SpriteRenderer>().sprite;
-                    Debug.Log(item.name + " was added to inventory");
-                    itemAdded = true;
-                    //Do something with that object
-                    item.SendMessage("DoInteraction");
-                    break;
-                }
-                if (item.name == "Nail")
-                {
-                    inventory[2] = item;
-                    nailCount++;
-                    Debug.Log("Total Nails: " + nailCount);
-                    nailCounter.text = "x " + nailCount.ToString();
-                    invButton[i].image.overrideSprite = item.GetComponent<SpriteRenderer>().sprite;
-                    Debug.Log(item.name + " was added to inventory");
-                    itemAdded = true;
-                    //Do something with that object
-                    item.SendMessage("DoInteraction");
-                    break;
-                }
-            }
-            if (item.name == "Coin")
-            {
-                coinCount++;
-                Debug.Log("Total Coins: " + coinCount);
-                coinCounter.text = "x " + coinCount.ToString();
+
+                invButton[i].image.overrideSprite = item.GetComponent<SpriteRenderer>().sprite;
+                Debug.Log(item.name + " was added to inventory");
                 itemAdded = true;
-                item.SendMessage("DoInteraction");
-                break;
-            }
-            if (item.name == "Plank")
-            {
-                plankCount++;
-                Debug.Log("Total Planks: " + plankCount);
-                plankCounter.text = "x " + plankCount.ToString();
-                itemAdded = true;
+                //Do something with that object
                 item.SendMessage("DoInteraction");
                 break;
             }
@@ -184,6 +95,5 @@ public class Inventory : MonoBehaviour {
 
     void Update()
     {
-        coinCounter.text = "x " + coinCount.ToString();
     }
 }

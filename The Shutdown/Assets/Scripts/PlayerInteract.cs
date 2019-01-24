@@ -38,8 +38,6 @@ public class PlayerInteract : MonoBehaviour {
                         //We found the item needed
                         currentInterObjScript.locked = false;
                         Debug.Log(currentInterObj.name + " was unlocked");
-                        inventory.coinCount = inventory.coinCount - currentInterObjScript.coinsNeeded;
-                        inventory.coinCounter.text = "x " + inventory.coinCount.ToString();
                     }
                     else
                     {
